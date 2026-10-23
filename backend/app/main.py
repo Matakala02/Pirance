@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Finance API")
+from app.routers import health
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+app = FastAPI(title="Finance API")
+app.include_router(health.router)
