@@ -37,7 +37,7 @@ and expenses, manage debts and savings goals, and plan a budget.
 4. Create a `.env` file (never commit it) with your own values:
 
 ```
-   DATABASE_URL=postgresql://postgres:<password>@localhost:5432/finance_dev
+   DATABASE_URL=postgresql+psycopg2://postgres:<password>@localhost:5432/finance_dev
    SECRET_KEY=<a long random string>
 ```
 
