@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pirance.com</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      margin: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0,0 , 0.75)),url(budgeting.jpeg);
+      background-size:cover ;
+    }
+    .para{
+      font-size: 40px;
+      font-weight: 700;
+      color:#fff;
+      letter-spacing: -0.03em;
+    }
+   .dot{
+    color: #E52E2E;
+    font-size: 50px;
+   }
+   .sub{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+
+   }
+   .sub-heading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0  20px 0;
+   }
+   .main-container{
+          height: 600px;
+           width: 500px;
+           background: #162139;
+           position: relative;
+           border-radius:30px ;
+           box-shadow: 0 0 30px rgba(0, 9, 0, .2);
+           position: relative;
+          
+   }
+   .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   }
+   .hyper-sub{
+    display: flex;
+    justify-content: center;
+   }
+   .input-text1{
+    display: flex;
+    justify-self: center;
+    margin: 20px 0;
+   }
+   .input-text{
+    width:100%;
+    padding: 15px 120px 20px 50px ;
+    border:none;
+    border-radius: 30px;
+    background:#1a1d27;
+    font-size: 15px;
+   }
+   .button-container{
+    display: flex;
+    justify-content: center;
+   }
+   .button-container1{
+    padding: 15px 160px 15px 160px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    border:2px solid #fff ;
+    background:transparent;
+    color: #fff;
+   }
+   .sub-1 {
+    color: #fff;
+   }
+   .check-me{
+    color: #fff;
+    margin-left: 0px;
+    margin-bottom: 20px;
+   }
+   a{
+    color: #fff;
+   }
+   .checkbox{
+    display: flex;
+    justify-content: center;
+
+   }
+   .minor-text{
+    color: #fff;
+   }
+   .minor1{
+    margin-left: 100px;
+    color: #fff;
+    margin-bottom: 20px;
+   }
+   .button-container1:hover{
+  border: none;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="title">
+ <p class="para">pirance<span class="dot">.</span></p>
+      </div>
+      <div class="sub-heading">
+        <p class="sub">Sign Up</p>
+      </div>
+        <div class="hyper-sub">
+        <p class="sub-1">Already have account <a href="" class="Already-have">login</a></p>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="input-text1">
+        <input type="text" class="input-text" placeholder="Enter your email">
+      </div>
+       <div class="input-text1">
+        <input type="text" class="input-text" placeholder="password">
+      </div>
+        <div class="input-text1">
+        <input type="text" class="input-text" placeholder="Confirm password">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="check-me">
+        <p class="minor-text">remember me</p>
+        <a class="minor1" href="">forgot password</a>
+      </div>
+      </div>
+      <div class="button-container">
+      <button class="button-container1">Login</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector('.Already-have').
+    addEventListener('click', (e) =>{
+  e.preventDefault();
+  window.location.href='pirance-sign-up.html';
+    });
+  </script>
+</body>
+</html>
